@@ -25,6 +25,7 @@ int Repl::input_loop(void)
         repl->readInput();
         
         if (repl->getInputBuffer() == ".exit") {
+            exit(0);
         }
         else {
             std::cout << "Unrecognized command \n";
